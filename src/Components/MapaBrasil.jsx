@@ -17,7 +17,7 @@ const MapaBrasil = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/population_by_uf")
+    fetch("https://pjpythonfacu.discloud.app/api/population_by_uf")
       .then((res) => res.json())
       .then((data) => setPopulationData(data))
       .catch((err) => console.error("Erro ao buscar dados:", err));
