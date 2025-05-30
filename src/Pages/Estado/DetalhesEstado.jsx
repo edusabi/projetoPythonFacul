@@ -20,7 +20,7 @@ const DetalhesEstado = () => {
   useEffect(() => {
     setDados(null);
     setErro(null);
-    fetch(`http://localhost:5000/api/estado/${uf}`)
+    fetch(`https://pjpythonfacu.discloud.app/api/estado/${uf}`)
       .then((res) => {
         if (!res.ok) throw new Error("Estado não encontrado");
         return res.json();
